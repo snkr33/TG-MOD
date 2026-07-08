@@ -4,7 +4,7 @@ navigator.clipboard.writeText(code).then(()=>{
 
 alert("Code copied!");
 
-window.location.href = "https://instagram.com/snkr___33";
+window.location.href = "https://instagram.com/tgmod.xyz";
 
 });
 
