@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    color:white;
+    padding-bottom:40px;
+}
+
+.header{
+    text-align:center;
+    padding:35px 15px 25px;
+}
+
+.header h1{
+    font-size:30px;
+    color:#ffffff;
+    margin-bottom:8px;
+}
+
+.header p{
+    color:#94a3b8;
+    font-size:15px;
+}
+
+.app-container{
+    width:94%;
+    max-width:900px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.app-card{
+    position:relative;
+    background:rgba(255,255,255,0.10);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:18px;
+    padding:18px 12px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.30);
+    backdrop-filter:blur(12px);
+    transition:transform 0.3s ease;
+}
+
+.app-card:active{
+    transform:scale(0.97);
+}
+
+.app-logo{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:18px;
+    margin:12px auto 14px;
+    display:block;
+    box-shadow:0 6px 18px rgba(0,0,0,0.4);
+}
+
+.app-card h2{
+    font-size:17px;
+    color:#ffffff;
+    margin-bottom:7px;
+}
+
+.category{
+    font-size:13px;
+    color:#94a3b8;
+    margin-bottom:12px;
+}
+
+.app-info{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    font-size:12px;
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+.badges{
+    position:absolute;
+    top:10px;
+    left:10px;
+    right:10px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.new-badge,
+.mod-badge{
+    padding:4px 7px;
+    border-radius:6px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.new-badge{
+    background:#22c55e;
+    color:white;
+}
+
+.mod-badge{
+    background:#f97316;
+    color:white;
+}
+
+.download-btn{
+    width:100%;
+    border:none;
+    padding:11px 6px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    z-index:9999;
+}
+
+.popup.show{
+    display:flex;
+}
+
+.popup-box{
+    width:100%;
+    max-width:350px;
+    background:#ffffff;
+    color:#111827;
+    padding:28px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+
+.popup-box h2{
+    margin-bottom:10px;
+    font-size:23px;
+}
+
+.popup-box p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.popup-btn{
+    display:block;
+    width:100%;
+    padding:13px;
+    margin-top:12px;
+    border:none;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.instagram-btn{
+    background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+    color:white;
+}
+
+.continue-btn{
+    background:#22c55e;
+    color:white;
+}
+
+.close-btn{
+    margin-top:15px;
+    border:none;
+    background:transparent;
+    color:#64748b;
+    font-size:14px;
+    cursor:pointer;
+}
+
+@media(max-width:360px){
+    .app-container{
+        gap:10px;
+    }
+
+    .app-card{
+        padding:15px 8px;
+    }
+
+    .app-logo{
+        width:68px;
+        height:68px;
+    }
+
+    .app-card h2{
+        font-size:15px;
+    }
+
+    .download-btn{
+        font-size:12px;
+    }
+}
+.site-logo{
+    width:220px;
+    max-width:80%;
+    height:auto;
+    display:block;
+    margin:0 auto 10px;
+}
+.site-logo{
+    width:220px;
+    max-width:80%;
+    height:auto;
+    display:block;
+    margin:0 auto 10px;
+}
